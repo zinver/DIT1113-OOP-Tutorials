@@ -1,14 +1,9 @@
 package tutorial_2;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println("=== Tutorial 2: Classes & Objects ===");
-        
-        Car mycar = new Car();
-        mycar.brand = "Toyota";
-        mycar.color = "Grey";
-        mycar.speed = 100;
-
-        System.out.println("Car color is: " + mycar.color);
-        mycar.displayInfo();
+        // coding starts here
+        Student s1 = new Student("Ahmed Fardin", "202502010015");
+        s1.displayInfo();
     }
 }
