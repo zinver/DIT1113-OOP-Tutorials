@@ -10,7 +10,7 @@ A single repository consolidating all practical lab tutorials (Week 1–10) comp
 |---|---|
 | **Name** | Ahmed Fardin |
 | **Student ID** | 202502010015 |
-| **Class Code** |  DIT1113 |
+| **Class Code** | DIT1113 |
 | **Program** | Diploma in Information Technology |
 | **GitHub** | [zinver](https://github.com/zinver) |
 
@@ -113,9 +113,7 @@ DIT1113-OOP-Tutorials/
    ```
 
 2. Go into a tutorial folder, compile, and run:
-
-
----   ```bash
+   ```bash
    cd tutorial_2
    javac *.java
    java Main
@@ -130,6 +128,19 @@ DIT1113-OOP-Tutorials/
    | 2 – 6 | `tutorial_2` … `tutorial_6` | `javac *.java` → `java Main` |
    | 7 | `tutorial_7` | `javac *.java` → `java QuizBattleGUI` |
 
+> **Note:** Tutorial 7 opens a GUI window, so it must be run on a computer with a display (e.g. a local PC). It will not open inside GitHub Codespaces, which has no screen.
+
+---
+
+## 💭 Reflection Summary
+
+Working through these tutorials helped me move from writing simple Java programs to actually thinking in objects. Inheritance and abstraction were the concepts that clicked the most for me. Seeing `Student` and `Lecturer` override `introduce()`, and different appliances each implement `operate()` in their own way, showed me how one common design can support many different behaviours.
+
+My biggest challenges were not only in the Java code but in managing the project. I first numbered my folders by week instead of following the official tutorial numbering, so I had to reorganise the whole repository using `git mv`. That also broke my `package` declarations, which taught me how Java packages depend on folder names. I also learned to fix common Git and terminal problems, such as a commit stuck waiting for an editor and running commands from the wrong directory.
+
+File handling in Week 8–9 and the Swing GUI in Week 10 were the most challenging topics, and I used an AI assistant (Claude) to review my work and help with parts of the code, which I then tested and checked against the expected outputs. In the future, I want to strengthen my skills in exception handling, Java collections, and GUI development, and use Git more confidently with clear, regular commits.
+
+---
 
 ## 📄 Self-Reflective Report
 
