@@ -1,4 +1,3 @@
-package tutorial_6;
 
 public class Employee {
     // Protected means subclasses (like Lecturer) can also access these

@@ -1,12 +1,13 @@
-package tutorial_2;
 
 public class Main {
     public static void main(String[] args) {
-        // coding starts here
-        Student s1 = new Student("Ahmed Fardin", 20, 3.85);
+        Person p1 = new Person("Ali", "P001");
+        Student s1 = new Student("Ahmed Fardin", "202502010015");
+        Lecturer l1 = new Lecturer("Sir Nazmirul", "L001");
 
-        s1.displayInfo();
-        s1.study();
-        s1.takeExam();
+        // Expected Output from the PDF
+        p1.introduce();
+        s1.introduce();
+        l1.introduce();
     }
 }

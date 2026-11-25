@@ -1,4 +1,3 @@
-package tutorial_6;
 
 public class Lecturer extends Employee {
     private String subject;

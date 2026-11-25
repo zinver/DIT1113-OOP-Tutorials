@@ -1,17 +1,17 @@
-package tutorial_4;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("=== Tutorial 4: Polymorphism ===");
+        // Create the Lecturer object with all the required data
+        Lecturer lecturer = new Lecturer(
+            "L100", 
+            "Dr Ahmad", 
+            "Java Programming", 
+            "Faculty of Information Technology"
+        );
 
-        // Parent class object
-        Animal myAnimal = new Animal();
-        
-        // Polymorphism: Parent reference, Child object!
-        Animal myDog = new Dog(); 
-
-        // Calling the methods
-        myAnimal.makeSound();
-        myDog.makeSound(); // Java knows to use the Dog's version at runtime!
+        // Print in the exact order of the EXPECTED OUTPUT
+        lecturer.displayInfo();
+        lecturer.displaySubject();
+        lecturer.displayDepartment();
     }
 }

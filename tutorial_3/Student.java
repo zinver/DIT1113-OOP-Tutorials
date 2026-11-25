@@ -1,12 +1,42 @@
-package tutorial_3;
 
-public class Student extends Person {
-    public Student(String name, String id) {
-        super(name, id);
+public class Student {
+    // Variables declared as private (Data Hiding)
+    private String studentID;
+    private String name;
+    private double cgpa;
+    private String programme; // Added new variable
+
+    // Setters
+    public void setStudentID(String studentID) {
+        this.studentID = studentID;
     }
 
-    @Override
-    public void introduce() {
-        System.out.println("I am a student.");
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setCGPA(double cgpa) {
+        this.cgpa = cgpa;
+    }
+
+    public void setProgramme(String programme) {
+        this.programme = programme;
+    }
+
+    // Getters
+    public String getStudentID() {
+        return studentID;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public double getCGPA() {
+        return cgpa;
+    }
+
+    public String getProgramme() {
+        return programme;
     }
 }

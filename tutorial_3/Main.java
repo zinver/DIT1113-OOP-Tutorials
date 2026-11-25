@@ -1,14 +1,20 @@
-package tutorial_3;
 
 public class Main {
     public static void main(String[] args) {
-        Person p1 = new Person("Ali", "P001");
-        Student s1 = new Student("Ahmed Fardin", "202502010015");
-        Lecturer l1 = new Lecturer("Sir Nazmirul", "L001");
+        // Create a new Student object
+        Student student1 = new Student();
 
-        // Expected Output from the PDF
-        p1.introduce();
-        s1.introduce();
-        l1.introduce();
+        // Use setters to assign values
+        student1.setStudentID("202502010015");
+        student1.setName("Ahmed Fardin");
+        student1.setCGPA(3.85);
+        student1.setProgramme("Diploma in IT");
+
+        // Use getters to print the values
+        System.out.println("=== Student Information System ===");
+        System.out.println("Student ID: " + student1.getStudentID());
+        System.out.println("Name: " + student1.getName());
+        System.out.println("CGPA: " + student1.getCGPA());
+        System.out.println("Programme: " + student1.getProgramme());
     }
 }
